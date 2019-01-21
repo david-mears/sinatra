@@ -1,9 +1,5 @@
-<h1>My name is <%= @name ? @name.capitalize : nil %></h1>
-
-<img src="http://bit.ly/1eze8aE" style="border: 3px dashed red">
-
 <% if !@name %>
-<form action="/named-cat">
+<form action="/named-cat" method="post">
   <div>
     <input type="text" name="name" autofocus></input>
   </div>
